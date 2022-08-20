@@ -1,0 +1,137 @@
+/* Min-width: 320px (smaller phone viewpoints)
+Min-width: 480px (small devices and most phones)
+Min-width: 768px (most tablets)
+Min-width: 992px (smaller desktop viewpoints)
+Min-width: 1200px (large devices and wide screens) */
+
+*::after,*::before,*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  
+}
+.App{
+  font-family: roboto;
+}
+.res{
+  text-decoration:none;
+}
+.button .res{
+  color:white;
+
+}
+.button {
+  width: fit-content;
+  padding:.25em 1.25em;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #252728;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+
+}
+
+
+
+body{
+  background: linear-gradient(0deg, rgba(37,39,40,1) 0%, rgba(46,50,52,1) 40%, rgba(251,251,251,1) 100%);
+}
+@media (min-width:736px) {
+ 
+
+}
+
+ /*Layout  */
+ h1{
+  margin-bottom: 2rem;
+  font-weight: 400;
+ }
+h3{
+  margin-bottom:1rem;
+}
+h2{
+  font-size: 1.25rem;
+  margin-bottom:2rem;
+  font-weight: 100;
+  transition-duration: 1.5s;
+  transition-delay: .5s;
+  border-bottom:1px black solid ;
+  
+}
+.nav-icons{
+  pointer-events: none;}
+.icon{
+  color:#444;
+pointer-events: none;
+
+
+}
+
+
+.navItem{
+
+  /* width: 220px;
+  height: 50px; */
+  /* border: none; */
+  /* outline: none; */
+  color: #fff;
+  /* background: #252728; */
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+
+}
+
+.button:before ,.navItem:before {
+
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  
+}
+
+.button:active, .navItem:active {
+  color: #252728
+}
+
+.button:active:after , .navItem:active:after {
+  background: transparent;
+}
+
+.button:hover:before ,.navItem:hover:before {
+  opacity: 1;
+}
+
+.button:after, .navItem:after {
+
+
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #252728;
+  left: 0;
+  top: 0;
+ 
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+
