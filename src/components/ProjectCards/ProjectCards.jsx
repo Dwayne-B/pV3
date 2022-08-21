@@ -60,10 +60,10 @@ export default function ProjectCards({title,img,gitUrl,demoUrl}) {
 <h4>{title}</h4>
       {/* <span>icon // icon</span> */}
      <span> 
-      <a href={gitUrl}>
+      <a href={demoUrl}>
         <button className='button'>Demo</button> 
         </a>
-        <a href={demoUrl}>
+        <a href={ gitUrl}>
         <button className='button'>Code</button> 
         </a>
       </span>

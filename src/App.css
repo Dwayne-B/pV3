@@ -38,10 +38,7 @@ Min-width: 1200px (large devices and wide screens) */
 body{
   background: linear-gradient(0deg, rgba(37,39,40,1) 0%, rgba(46,50,52,1) 40%, rgba(251,251,251,1) 100%);
 }
-@media (min-width:736px) {
- 
 
-}
 
  /*Layout  */
  h1{

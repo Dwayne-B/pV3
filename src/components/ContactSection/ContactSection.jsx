@@ -4,7 +4,10 @@ const ContactContainer = styled.div`
 text-align:center;
 padding:3em;
 
-
+small{
+  display:block;
+  margin-top:1.5em;
+}
 `
 
 
@@ -12,7 +15,7 @@ padding:3em;
 
 export default function ContactSection() {
   return (
-    <ContactContainer>
+    <ContactContainer id="Contact">
 
 <h3>Did you enjoy my work? Let's get in contact!</h3>
 
@@ -24,7 +27,7 @@ export default function ContactSection() {
 dwaynebynumtech@gmail.com
 
 </a>
-
+<small ><a href="#">back to top</a></small>
     </ContactContainer>
   )
 }

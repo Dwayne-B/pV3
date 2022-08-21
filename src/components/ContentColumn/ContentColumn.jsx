@@ -49,9 +49,16 @@ export default function ContentColumn({cardData ,progressBarData}) {
 
   return (
     <ContentCol >
-        <h2 >Interesting Quotes!</h2>
+        
      
-       <QuoteContainer/>
+        <h2>Projects</h2> 
+     <div className="projectCard-container">
+     {   
+       cardData.map((project,i)=>{
+         return  <ProjectCards key={i}title={project.title} demoUrl={project.demoUrl} gitUrl={project.gitUrl} img = {project.img} />
+
+        })}
+     </div>
 
       
         <h2>Professional Skills</h2>
@@ -70,18 +77,11 @@ export default function ContentColumn({cardData ,progressBarData}) {
 
 <DownloadButton/>
 
-     <h2>Projects</h2> 
-     <div className="projectCard-container">
-     {   
-       cardData.map((project,i)=>{
-         return  <ProjectCards key={i}title={project.title} demoUrl={project.demoUrl} gitUrl={project.gitUrl} img = {project.img} />
-
-        })}
-     </div>
+<h2 >Interesting Quotes!</h2>
     
+     <QuoteContainer/>
 
-
-<ContactSection/>
+<ContactSection />
     </ContentCol>
   )
 }

@@ -20,10 +20,8 @@ flex-direction:column;
 
 `
 const IMG = styled.img`
-opacity:.4;
-object-fit:fill;
-height:100%;
-width:100%;
+
+min-height:22em;
 `
 const Navigation = styled.nav`
 display:flex;
@@ -79,7 +77,7 @@ export default function NavColumn() {
 
   return (
     <NavCol>
-      <IMG src="https://placeimg.com/200/200/nature" alt="" />
+      <IMG src="./naruto.png" alt="" />
       <Navigation>
     
       <a className="navItem" href="/">Home     <Person className='nav-icons'/> </a>
@@ -87,7 +85,7 @@ export default function NavColumn() {
       
       <Link className='navItem' to="/resume.pdf" target="_blank" download>Download Resume <Article className='nav-icons'/></Link>
       
-      <a  className="navItem"  href="#Portfolio">Portfolio<AppShortcut className='nav-icons'/></a><a   className="navItem" href="#Contact">Contact <ContactPhone className='nav-icons'/></a>
+      <a   className="navItem" href="#Contact">Contact <ContactPhone className='nav-icons'/></a>
       </Navigation>
       <SocialLinks>
         <h3>Social Links</h3>

@@ -46,7 +46,7 @@ function App() {
         gitUrl: "https://github.com/Dwayne-B/FEM-BaseApparel",
       },
       {
-        title: "Sunnyide Agency",
+        title: "Sunnyside Agency",
         img: sunnySide,
         demoUrl: "https://dwayne-b.github.io/FEM-sunnysideAgency/",
         gitUrl: "https://github.com/Dwayne-B/FEM-BaseApparel",
