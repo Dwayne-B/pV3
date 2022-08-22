@@ -12,7 +12,7 @@ border:solid grey 1px;
 border-top:none;
 border-bottom:none;
 min-height:5em;
-// max-height:30em;
+
 height:20em;
 padding:0em 1.25em 0em 1.25em;
 text-align:center;
@@ -24,7 +24,7 @@ p{
   font-weight:300;
   line-height:1.75em;
   margin-bottom:1.25em;
-  // flex:5;
+ 
   @media (max-width:768px){
     font-size:1em;
   }
@@ -61,7 +61,7 @@ export default function QuoteContainer() {
   return (
     <QuoteCnt>
       
-      <p>{quoteData? `${quoteData[index].author} once said, " ${quoteData[index].text}"`:"Server Error, refresh page " }</p>
+      <p>{quoteData? `${quoteData[index].author} once said, " ${quoteData[index].text}"`:"Error, refresh page " }</p>
       <button className='button' onClick={()=>{setIndex(randomStart(quoteData.length))}}>Next Quote!</button>
     </QuoteCnt>
   )
