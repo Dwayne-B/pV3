@@ -1,10 +1,9 @@
-import { AppShortcut, Article, ContactPhone, Facebook, Person } from '@mui/icons-material';
-import { useState } from 'react';
+import { Article, ContactPhone, Person } from '@mui/icons-material';
+
 import { IconContext } from "react-icons";
 import { FaGithubAlt, FaLinkedinIn } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { DownloadButton } from "../DownloadButton/DownloadButton";
 const NavCol= styled.div`
 
 height:fit-content;

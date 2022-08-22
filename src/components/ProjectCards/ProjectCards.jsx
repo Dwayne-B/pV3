@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+
 import styled from 'styled-components';
 
 const ProjectCard = styled.div`
@@ -55,12 +55,7 @@ export default function ProjectCards({title,img,gitUrl,demoUrl}) {
   // setImg(img);
 
 
-  const demoCodeBtns = `
-  
-  
 
-  
-  `
   return (
     <ProjectCard style={{backgroundImage:`url('${img}')`}}>
 
