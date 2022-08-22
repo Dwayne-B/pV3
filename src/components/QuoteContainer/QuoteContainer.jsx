@@ -24,7 +24,10 @@ p{
   font-weight:300;
   line-height:1.75em;
   margin-bottom:1.25em;
-  flex:5;
+  // flex:5;
+  @media (max-width:768px){
+    font-size:1em;
+  }
   
 }
  .button{

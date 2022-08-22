@@ -19,7 +19,9 @@ flex-direction:column;
 
 `
 const IMG = styled.img`
-
+@media (max-width:425px){
+  display:none;
+}
 
 `
 const Navigation = styled.nav`
