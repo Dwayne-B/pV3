@@ -50,8 +50,17 @@ background-repeat:no-repeat;
 export default function ProjectCards({title,img,gitUrl,demoUrl}) {
 
   
+  
   // const [pImg ,setImg ] = useState();
   // setImg(img);
+
+
+  const demoCodeBtns = `
+  
+  
+
+  
+  `
   return (
     <ProjectCard style={{backgroundImage:`url('${img}')`}}>
 
@@ -60,12 +69,12 @@ export default function ProjectCards({title,img,gitUrl,demoUrl}) {
 <h4>{title}</h4>
       {/* <span>icon // icon</span> */}
      <span> 
-      <a href={demoUrl}>
-        <button className='button'>Demo</button> 
-        </a>
-        <a href={ gitUrl}>
-        <button className='button'>Code</button> 
-        </a>
+     <a href={demoUrl}><button className='button'>{title === "Listen with Kristen" ? "Live":"Demo"}</button></a>
+    { 
+    gitUrl  && <a href={ gitUrl}><button className='button'>Code</button></a>
+   
+        }
+       
       </span>
 
 </div>

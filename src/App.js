@@ -7,8 +7,8 @@ import NavColumn from "./components/NavColumn/NavColumn";
 
 // IMAGES
 import baseApparel from "./projectImgs/base_apparel.png";
+import lwk from "./projectImgs/lwk.png";
 import sunnySide from "./projectImgs/Sunnyside_agency.png";
-
 const AppGrid = styled.div`
   display: flex;
   flex-direction: column;
@@ -51,7 +51,11 @@ function App() {
         demoUrl: "https://dwayne-b.github.io/FEM-sunnysideAgency/",
         gitUrl: "https://github.com/Dwayne-B/FEM-BaseApparel",
       },
-      { title: "Base Apparel", img: baseApparel, url: "TEMP URL" },
+      {
+        title: "Listen with Kristen",
+        img: lwk,
+        demoUrl: "https://www.listenwithkristen.com/",
+      },
     ]);
   };
 

@@ -21,7 +21,7 @@ flex-direction:column;
 `
 const IMG = styled.img`
 
-min-height:22em;
+
 `
 const Navigation = styled.nav`
 display:flex;
