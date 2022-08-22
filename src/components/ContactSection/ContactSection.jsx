@@ -27,7 +27,7 @@ export default function ContactSection() {
 dwaynebynumtech@gmail.com
 
 </a>
-<small ><a href="#">back to top</a></small>
+<small ><a href="#top">back to top</a></small>
     </ContactContainer>
   )
 }
